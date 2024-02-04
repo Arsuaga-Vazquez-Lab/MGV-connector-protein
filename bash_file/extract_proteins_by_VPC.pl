@@ -27,6 +27,7 @@ while (my $line = <$fh>) {
         if ($line =~ m/^>/){
             # print($vpc.",".$line);
             print $wfh $vpc.",".$line;
+            print $line;
         }
         else{
             # print($line);
