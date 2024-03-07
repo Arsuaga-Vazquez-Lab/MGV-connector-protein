@@ -1,0 +1,184 @@
+6qx5.pdb
+	family
+		 ENTEROBACTERIA PHAGE T7;                        
+	molecule
+		 PORTAL PROTEIN;                                            
+5a20.pdb
+	molecule
+		 PORTAL PROTEIN;                                            
+		 HEAD COMPLETION PROTEIN GP16;                              
+		 TAIL-TO-HEAD JOINING PROTEIN GP17;                         
+		 MAJOR TAIL PROTEIN GP17.1;                                 
+	family
+		 BACILLUS PHAGE SPP1;                            
+5a21.pdb
+	family
+		 BACILLUS PHAGE SPP1;                            
+	molecule
+		 PORTAL PROTEIN;                                            
+		 HEAD COMPLETION PROTEIN GP16;                              
+		 TAIL-TO-HEAD JOINING PROTEIN GP17;                         
+7z4w.pdb
+	molecule
+		 PORTAL PROTEIN;                                            
+		 HEAD COMPLETION PROTEIN GP15;                              
+		 HEAD COMPLETION PROTEIN GP16;                              
+	family
+		 BACILLUS SUBTILIS;                              
+6to8.pdb
+	molecule
+		 ADAPTOR PROTEIN RCC01688;                                  
+		 PORTAL PROTEIN RCC01684;                                   
+	family
+		 RHODOBACTER CAPSULATUS DE442;                   
+7pv2.pdb
+	molecule
+		 HEAD-TAIL CONNECTOR (PORTAL PROTEIN);                      
+	family
+		 BACILLUS PHAGE GA-1;                            
+8e4g.pdb
+	family
+		 ESCHERICHIA PHAGE T7;                           
+	molecule
+		 PORTAL PROTEIN;                                            
+		 TAIL TUBULAR PROTEIN GP11;                                 
+		 TAIL FIBER PROTEIN;                                        
+		 TAIL TUBULAR PROTEIN GP12;                                 
+		 INTERNAL VIRION PROTEIN GP14;                              
+		 INTERNAL VIRION PROTEIN GP15;                              
+8dgf.pdb
+	molecule
+		 ATP-BINDING PROTEIN AVS4;                                  
+		 PORTAL PROTEIN;                                            
+	family
+		 ESCHERICHIA COLI;                               
+		 ESCHERICHIA PHAGE PHIV-1;                       
+7qog.pdb
+	molecule
+		 PORTAL PROTEIN GP20;                                       
+	family
+		 BACTEROIDES PHAGE CRASS001;                     
+8vdc.pdb
+	family
+		 DUBOWVIRUS DV80ALPHA;                           
+	molecule
+		 PORTAL PROTEIN;                                            
+		 CONNECTOR;                                                 
+6toa.pdb
+	family
+		 RHODOBACTER CAPSULATUS DE442;                   
+	molecule
+		 ADAPTOR PROTEIN RCC01688;                                  
+		 PORTAL PROTEIN RCC01684;                                   
+		 TAIL TERMINATOR PROTEIN RCC01690;                          
+		 STOPPER PROTEIN RCC01689;                                  
+		 TAIL TUBE PROTEIN RCC01691;                                
+6tjp.pdb
+	molecule
+		 PORTAL PROTEIN;                                            
+	family
+		 ENTEROBACTERIA PHAGE T7;                        
+7ey8.pdb
+	molecule
+		 PORTAL PROTEIN;                                            
+	family
+		 ESCHERICHIA PHAGE T7;                           
+8vd8.pdb
+	family
+		 DUBOWVIRUS DV80ALPHA;                           
+	molecule
+		 PORTAL PROTEIN;                                            
+		 CONNECTOR;                                                 
+7bp0.pdb
+	molecule
+		 PORTAL PROTEIN;                                            
+	family
+		 ESCHERICHIA PHAGE T7;                           
+7qol.pdb
+	family
+		 BACTEROIDES PHAGE CRASS001;                     
+	molecule
+		 PORTAL PROTEIN GP20;                                       
+		 TAIL HUB PROTEIN A GP38;                                   
+		 TAIL HUB PROTEIN B GP39;                                   
+		 TAIL FIBER PROTEIN GP22;                                   
+		 MUZZLE PROTEIN GP44;                                       
+		 MUZZLE BOUND HELIX;                                        
+7bou.pdb
+	molecule
+		 PORTAL PROTEIN;                                            
+	family
+		 ESCHERICHIA PHAGE T7;                           
+6qwp.pdb
+	family
+		 ENTEROBACTERIA PHAGE T7;                        
+	molecule
+		 PORTAL PROTEIN;                                            
+6te9.pdb
+	molecule
+		 ADAPTOR PROTEIN RCC01688;                                  
+		 PHAGE PORTAL PROTEIN, HK97 FAMILY;                         
+		 TAIL TERMINATOR PROTEIN RCC01690;                          
+		 STOPPER PROTEIN RCC01689;                                  
+		 PHAGE MAJOR TAIL PROTEIN, TP901-1 FAMILY;                  
+	family
+		 RHODOBACTER CAPSULATUS;                         
+6qxm.pdb
+	family
+		 ENTEROBACTERIA PHAGE T7;                        
+	molecule
+		 PORTAL PROTEIN;                                            
+7qoj.pdb
+	molecule
+		 PORTAL PROTEIN GP20;                                       
+		 TAIL HUB PROTEIN A GP38;                                   
+		 TAIL HUB PROTEIN B GP39;                                   
+		 TAIL FIBER PROTEIN GP22;                                   
+	family
+		 BACTEROIDES PHAGE CRASS001;                     
+6te8.pdb
+	family
+		 RHODOBACTER CAPSULATUS;                         
+	molecule
+		 ADAPTOR PROTEIN RCC01688;                                  
+		 PHAGE PORTAL PROTEIN, HK97 FAMILY;                         
+7qoh.pdb
+	family
+		 BACTEROIDES PHAGE CRASS001;                     
+	molecule
+		 MAJOR CAPSID PROTEIN GP32;                                 
+		 AUXILIARY CAPSID PROTEIN GP36;                             
+		 PORTAL VERTEX CAPSID PROTEIN GP57;                         
+		 HEAD FIBER TRIMER PROTEIN GP21;                            
+		 PORTAL PROTEIN GP20;                                       
+5jj1.pdb
+	molecule
+		 PORTAL PROTEIN;                                            
+	family
+		 ENTEROBACTERIA PHAGE P22;                       
+5gai.pdb
+	family
+		 ENTEROBACTERIA PHAGE P22;                       
+	molecule
+		 PORTAL PROTEIN;                                            
+		 PEPTIDOGLYCAN HYDROLASE GP4;                               
+		 TAIL FIBER PROTEIN;                                        
+8egr.pdb
+	molecule
+		 GP15, RECEPTOR-BINDING PROTEIN, TAIL FIBER;                
+		 UPPER COLLAR PROTEIN;                                      
+		 GP16, TAIL STEM PROTEIN;                                   
+		 SGNH_HYDRO DOMAIN-CONTAINING PROTEIN;                      
+		 GP20, PORTAL-PROXIMAL CORE PROTEIN;                        
+	family
+		 STAPHYLOCOCCUS PHAGE ANDHRA;                    
+5jj3.pdb
+	molecule
+		 PORTAL PROTEIN;                                            
+	family
+		 ENTEROBACTERIA PHAGE P22;                       
+7ey6.pdb
+	family
+		 ESCHERICHIA PHAGE T7;                           
+	molecule
+		 PORTAL PROTEIN;                                            
