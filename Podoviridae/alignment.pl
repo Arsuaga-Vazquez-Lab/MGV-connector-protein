@@ -1,13 +1,12 @@
 use strict;
 use warnings;
 
-my $output = $ARGV[0];
+my $output = "output.txt";
 `echo "" > $output`;
 
 open my $fh, '>>', $output or die "Could not open file '$output' $!";
 my @files = glob "*.pdb.gz";
 
-decompress all files with gzip
 for my $file (@files) {
     `gzip -d $file`;
 }
@@ -22,8 +21,15 @@ for my $file1 (@files) {
     }
 }
 
-compress all files
 for my $file (@files) {
     `gzip $file`;
 }
 close $fh;
+
+open my $fh, '<', $output or die "Can't open file: $!";
+while(my $line = <$fh>) {
+    chomp $line;
+    if ($line =~ m/^(Name|Length|Aligned|TM-score)/) {
+        print("$line\n");
+    }
+}
