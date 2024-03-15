@@ -2,27 +2,31 @@
 
 ## Introduction
 
-This project is based on data obtained from the paper [Metagenomic compendium of 189,680 DNA viruses from the human gut microbiome](https://www.nature.com/articles/s41564-021-00928-6). We are specifically interested in the connector protein and the goal of this project is to construct a "general structure" of the connector protein using the protein sequences found in this paper. We will also attempt to visualize the evolutionary relationships between the structure of the connector protein across families of bacteriophages using a phylogenetic tree. 
+This project is based on data obtained from the paper [Metagenomic compendium of 189,680 DNA viruses from the human gut microbiome](https://www.nature.com/articles/s41564-021-00928-6) which contains a very interesting set of data connecting bacteriophages found in the microbiome to their bacterial hosts. As the TMBL lab works largely on DNA folding and packaging in bacteriophages, we will be focusing on the connector protein and the goal of this project is to construct a "general structure" of the protein using the sequences found in this paper. We will also attempt to visualize the evolutionary relationships between the structure of the connector protein across families of bacteriophages using a phylogenetic tree. 
+
+As a side project, we will also be looking at small capsids (T < 4) identified in [The Missing Tailed Phages: Prediction of Small Capsid Candidates](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7762592/) and constructing a structure of the capsid to evaluate its interactions with the connector protein. 
 
 ## Workflow
 
 1. **Data Collection**: 
     - Protein sequences in the MGV database are clustered into viral protein clusters (VPCs) which have been annotated using various databases such as Pfam, KEGG, and InterPro.
-    - We first extract VPC's that are annotated with the term "connector" from the MGV database.
-    - We then extract the protein sequences of these VPCs from the MGV database.
-    - The files to do this are located in the `scripts` directory.
+    - Extract VPC's that are annotated with the term "connector" from the MGV database
+    - Extract protein sequences that belong to these VPCs from the MGV database
+    - Files for this are located in the `scripts` directory
 
 2. **Modelling with AlphaFold2**
     - We use the AlphaFold2 algorithm to predict the 3D structure of the connector protein.
+    - TO DO
 
 3. **Protein Docking with HSYMDOC**
     - We will use HSYMDOC to construct the connector protein complex (12 fold symmetry). 
+    - TO DO
 
 4. **Analysis**
     - Using TM Align (may change) to do pair-wise structural comparisons of the predicted structures + comparisons with known structures of the connector protein (PDB database)
 
 5. **Phylogenetic Analysis**
-    - Build a tree (code is in `Podoviridae` directory for now)
+    - Build a tree (code is in [Podoviridae](https://github.com/Arsuaga-Vazquez-Lab/MGV-connector-protein/tree/main/Podoviridae) directory for now)
     - `Podoviridae` is just a proof of concept (contains some phages annotated with connector from the PDB website)
     
 - data from the MGV paper can be found in the `data` directory

@@ -1,15 +1,13 @@
 import pandas as pd
-import argparse
+# import argparse
 from scipy.cluster.hierarchy import linkage, dendrogram
-import numpy as np
 import matplotlib.pyplot as plt
 
-parser = argparse.ArgumentParser(description='Create a tree from a pairwise alignment')
-parser.add_argument('-a', type=str, help='The pairwise alignment file')
-parser.add_argument('-m', type=str, help='The metadata file')
-parser.add_argument('-g', type=str, help='The type of graph to create (single, complete, centroid, all)')
-args = parser.parse_args()
-
+# parser = argparse.ArgumentParser(description='Create a tree from a pairwise alignment')
+# parser.add_argument('-a', type=str, help='The pairwise alignment file')
+# parser.add_argument('-m', type=str, help='The metadata file')
+# parser.add_argument('-g', type=str, help='The type of graph to create (single, complete, centroid, all)')
+# args = parser.parse_args()
 
 def tree(alignment, metadata, graph_type="single"):
 
@@ -64,8 +62,26 @@ def tree(alignment, metadata, graph_type="single"):
 
     # Replace pdb file with family / protein description
     for i in range(tree.shape[0]):
-        tree.iloc[i, 0] = metatdata_df.loc[tree.iloc[i, 0], "Family"][0]
-        tree.iloc[i, 1] = metatdata_df.loc[tree.iloc[i, 1], "Family"][0]
+        fam0 = metatdata_df.loc[tree.iloc[i, 0], "Family"]
+        fam1 = metatdata_df.loc[tree.iloc[i, 1], "Family"]
+        if len(fam0) > 1:
+            tree.iloc[i, 0] = fam0[0]
+            for f in fam0:
+                if "phage" in f.lower():
+                    tree.iloc[i, 0] = f
+                    break
+        else:
+            tree.iloc[i, 0] = fam0[0]
+        if len(fam1) > 1:
+            tree.iloc[i, 1] = fam1[0]
+            for f in fam1:
+                if "phage" in f.lower():
+                    tree.iloc[i, 1] = f
+                    break
+        else:
+            tree.iloc[i, 1] = fam1[0]        
+    # tree.iloc[i, 0] = metatdata_df.loc[tree.iloc[i, 0], "Family"][0]
+    # tree.iloc[i, 1] = metatdata_df.loc[tree.iloc[i, 1], "Family"][0]
 
     dist_matrix = pd.DataFrame(index = tree["Chain 1"].unique(), columns = tree["Chain 1"].unique())
 
@@ -79,16 +95,21 @@ def tree(alignment, metadata, graph_type="single"):
         for j in ["single", "complete", "centroid"]:
             linkage_matrix = linkage(dist_matrix, j)
             dendrogram(linkage_matrix, color_threshold=1, labels=tree.iloc[:,1].unique(),show_leaf_counts=True)
-            plt.title=("test")
+            plt.title(j)
+            plt.ylabel("Average TM Score")
+            plt.xticks(rotation=45, ha='right')
             plt.show()
+            plt.savefig(j + ".png")
     else:
         linkage_matrix = linkage(dist_matrix, graph_type)
         dendrogram(linkage_matrix, color_threshold=1, labels=tree.iloc[:,1].unique(),show_leaf_counts=True)
-        # plt.title=("test")
+        plt.title(graph_type)
+        plt.ylabel("Average TM Score")
         plt.xticks(rotation=45, ha='right')
         plt.show()
+        plt.savefig(graph_type + ".png")
 
     return(tree, dist_matrix, metatdata_df)
 
-if __name__ == '__main__':
-    tree(args.a, args.m, args.g)
+# if __name__ == '__main__':
+#     tree(args.a, args.m, args.g)

@@ -5,8 +5,11 @@
 1. `alignment.pl`
     - Aligns the protein sequences using TM-align
     - Usage: `perl alignment.pl`
-    - outputs a file `output.txt` with the alignment scores
+    - outputs a file `output.txt` with the alignment scores 
     - requires TM align: https://zhanggroup.org/TM-align/
+    - TM-scores will be used to create a distance matrix in `tree.py`
+        - TM-score from pdb1 to pdb2 will be different from pdb2 to pdb1 (so I average them when creating the tree)
+        
 
 2. `metadata.pl`
     - Extracts metadata from the pdb files
