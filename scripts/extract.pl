@@ -58,7 +58,7 @@ close $wfh;
 
 # Read mgv_contig_info.tsv.gz and create dictionary in format: (MGV-GENOME-1_1, family/ order / genus)
 $protein_file =~ m/.+(?=\.[^.]+$)/;
-my $write_file_phylo = "$&"."_phylo.faa";
+my $write_file_phylo = "$&"."_phylo.csv";
 `echo "" > $write_file_phylo`;
 open(my $wfh_phylo, '>>', $write_file_phylo) or die "Can't open file for writing: $!";
 open(my $phylo_fh, '-|', "zcat $phylo_file") or die "Can't open pipe to zcat: $!";
@@ -87,4 +87,4 @@ foreach my $key (keys %proteins) {
 close $wfh_phylo;
 
 # to run:
-# perl bash_file/extract.pl [file with list of proteins] [order/family/genus]
+# perl scripts/extract.pl [file with list of proteins] [order/family/genus]
