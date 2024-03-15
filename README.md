@@ -12,7 +12,7 @@ As a side project, we will also be looking at small capsids (T < 4) identified i
     - Protein sequences in the MGV database are clustered into viral protein clusters (VPCs) which have been annotated using various databases such as Pfam, KEGG, and InterPro.
     - Extract VPC's that are annotated with the term "connector" from the MGV database
     - Extract protein sequences that belong to these VPCs from the MGV database
-    - Files for this are located in the `scripts` directory
+    - Files for this are located in the [scripts](https://github.com/Arsuaga-Vazquez-Lab/MGV-connector-protein/tree/0cc42c4bffefd5a69b6dfe705fca0d5478359317/scripts) directory
 
 2. **Modelling with AlphaFold2**
     - We use the AlphaFold2 algorithm to predict the 3D structure of the connector protein.
@@ -29,4 +29,4 @@ As a side project, we will also be looking at small capsids (T < 4) identified i
     - Build a tree (code is in [Podoviridae](https://github.com/Arsuaga-Vazquez-Lab/MGV-connector-protein/tree/main/Podoviridae) directory for now)
     - `Podoviridae` is just a proof of concept (contains some phages annotated with connector from the PDB website)
     
-- data from the MGV paper can be found in the `data` directory
+- data from the MGV paper can be found in the [data](https://github.com/Arsuaga-Vazquez-Lab/MGV-connector-protein/tree/0cc42c4bffefd5a69b6dfe705fca0d5478359317/data) directory
