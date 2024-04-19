@@ -252,16 +252,16 @@ VPC-9568,NULL,207
 VPC-9568,Siphoviridae,11
 VPC-99060,Myoviridae,8
 VPC-99060,Siphoviridae,1
-G20C, nan
-GTA-particle,nan
-HK97-like, Siphoviridae 
-P22, Podoviridae 
-P23-45, Siphoviridae
-SPP1, Siphoviridae 
-epstein-barr-virus, Herpesviridae 
-herpes-simplex-virus1, Herpesviridae 
-karposis-sarcoma-associated-herpesvirus, Herpesviridae 
-p68, Podoviridae
-phi29, Podoviridae 
-phi29-1jnb, Podoviridae
-T7, Podoviridae 
+G20C,NULL
+GTA-particle,NULL
+HK97-like,Siphoviridae 
+P22,Podoviridae 
+P23-45,Siphoviridae
+SPP1,Siphoviridae 
+epstein-barr-virus,Herpesviridae 
+herpes-simplex-virus1,Herpesviridae 
+karposis-sarcoma-associated-herpesvirus,Herpesviridae 
+p68,Podoviridae
+phi29,Podoviridae 
+phi29-1jnb,Podoviridae
+T7,Podoviridae 

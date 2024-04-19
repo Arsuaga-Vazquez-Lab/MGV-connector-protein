@@ -20,13 +20,20 @@ As a side project, we will also be looking at small capsids (T < 4) identified i
 
 3. **Protein Docking with HSYMDOC**
     - We will use HSYMDOC to construct the connector protein complex (12 fold symmetry). 
-    - TO DO
+	- (FUTURE DIRECTIONS) 
 
 4. **Analysis**
     - Using TM Align (may change) to do pair-wise structural comparisons of the predicted structures + comparisons with known structures of the connector protein (PDB database)
 
-5. **Phylogenetic Analysis**
+5. **Structural Analysis**
     - Build a tree (code is in [Podoviridae](https://github.com/Arsuaga-Vazquez-Lab/MGV-connector-protein/tree/main/Podoviridae) directory for now)
     - `Podoviridae` is just a proof of concept (contains some phages annotated with connector from the PDB website)
+	
+6. **Classifying by Mechanism**
+	- tbd
+	
+7. **Comparing with (Normal) Phylogenetic Analysis**
+	- Building a tree with genomic sequences and connector gene
+	
     
 - data from the MGV paper can be found in the [data](https://github.com/Arsuaga-Vazquez-Lab/MGV-connector-protein/tree/0cc42c4bffefd5a69b6dfe705fca0d5478359317/data) directory

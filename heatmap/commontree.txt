@@ -1,0 +1,26 @@
+Bacteria
++-Bacillota
+| \-Clostridia
+|   +-Lachnospirales
+|   | \-Lachnospiraceae
+|   |   +-Agathobacter
+|   |   +-Fusicatenibacter
+|   |   \-Blautia
+|   \-Eubacteriales
+|     +-Oscillospiraceae
+|     | \-Faecalibacterium
+|     \-Gemmiger
++-Actinomycetota
+| ++Coriobacteriia
+| | \-Eggerthella
+| \+Actinomycetes
+|   \-Bifidobacterium
+\+Bacteroidota
+  \-Bacteroidales
+    +-Tannerellaceae
+    | \-Parabacteroides
+    +-Prevotellaceae
+    | \-Prevotella
+    \-Bacteroidaceae
+      \-Bacteroides
+-----------------------------------
