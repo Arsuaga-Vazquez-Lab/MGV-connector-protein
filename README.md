@@ -16,24 +16,28 @@ As a side project, we will also be looking at small capsids (T < 4) identified i
 
 2. **Modelling with AlphaFold2**
     - We use the AlphaFold2 algorithm to predict the 3D structure of the connector protein.
-    - TO DO
-
-3. **Protein Docking with HSYMDOC**
-    - We will use HSYMDOC to construct the connector protein complex (12 fold symmetry). 
-	- (FUTURE DIRECTIONS) 
-
-4. **Analysis**
+3. **Analysis**
     - Using TM Align (may change) to do pair-wise structural comparisons of the predicted structures + comparisons with known structures of the connector protein (PDB database)
 
 5. **Structural Analysis**
     - Build a tree (code is in [Podoviridae](https://github.com/Arsuaga-Vazquez-Lab/MGV-connector-protein/tree/main/Podoviridae) directory for now)
     - `Podoviridae` is just a proof of concept (contains some phages annotated with connector from the PDB website)
+    - Structural Phylogenetic tree can be found in [tree](https://github.com/Arsuaga-Vazquez-Lab/MGV-connector-protein/tree/main/tree)
 	
-6. **Classifying by Mechanism**
-	- tbd
-	
-7. **Comparing with (Normal) Phylogenetic Analysis**
-	- Building a tree with genomic sequences and connector gene
-	
+6. **Compare Structural Phylogenetic Tree with Hosts**
+	- hosts can be found in [heatmap](https://github.com/Arsuaga-Vazquez-Lab/MGV-connector-protein/tree/main/heatmap)
+    	
+
+
+## Future Directions
+
+- Instead of using TM-align (which looks at global similarities), we should compare structures based on local similarities. One software that does this is [DALI](http://ekhidna2.biocenter.helsinki.fi/dali/)
+    
+- We only looked compared the structure of the monomer in this project. Using the complete structure of the complex would be more biologically accurate. 
+
+- And last but not least, it's always better to have more data. We only used structures in the database that were annotated as "connector". "Portal" is synonymous with "connector" in bacteriophage physiology. Those structures can also be used here. 
+
+
+** Note**
     
 - data from the MGV paper can be found in the [data](https://github.com/Arsuaga-Vazquez-Lab/MGV-connector-protein/tree/0cc42c4bffefd5a69b6dfe705fca0d5478359317/data) directory
