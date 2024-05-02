@@ -40,3 +40,8 @@ Because there are so many sequences in the database, we don't want to destroy Ca
 	- calculates the consensus sequence
 	- dealt with ambiguities in sequence by setting threshold for deciding the residue to be 0 (not sure if this is the best solution, may fix later)
 	- requires `Biopython` (can be a bit difficult to install?)
+	
+- `run_alphafold.sh`
+	- runs AlphaFold (on Catena) on all files in desired folder
+	- remember to change the directory
+	- may need to change permissions to run AlphaFold :(
